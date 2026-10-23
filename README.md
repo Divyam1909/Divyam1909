@@ -24,10 +24,10 @@ Internships at **ZetaQ** (LLM pipelines), **Thinking Engines** (player-performan
 
 ## Tech
 
-**Languages:** Python, JavaScript, TypeScript, C, SQL
-**Web:** React, Next.js, Node.js, Express, FastAPI, Three.js
-**AI/ML:** PyTorch, Hugging Face, LoRA/QLoRA fine-tuning, RAG, Ollama, llama.cpp, Gemini API
-**Data:** PostgreSQL (Supabase), MongoDB, MySQL
+- **Languages:** Python, JavaScript, TypeScript, C, SQL
+- **Web:** React, Next.js, Node.js, Express, FastAPI, Three.js
+- **AI/ML:** PyTorch, Hugging Face, LoRA/QLoRA fine-tuning, RAG, Ollama, llama.cpp, Gemini API
+- **Data:** PostgreSQL (Supabase), MongoDB, MySQL
 
 ## Contributions
 
