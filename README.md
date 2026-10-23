@@ -1,4 +1,7 @@
-# Hi, I'm Divyam Navin
+<p align="center"><img src="assets/banner.svg" alt="Divyam Navin" width="100%"></p>
+<p align="center"><img src="assets/typing.svg" alt="Full-stack + AI/ML engineer | Researching how LLMs fail silently in production | Building fair and privacy-preserving ML | IT @ FCRIT, Thane, India"></p>
+
+### Hi, I'm Divyam 👋
 
 IT undergraduate at FCRIT building full-stack products and doing applied AI/ML research. I like problems where models meet real deployments: how they fail, whether they are fair, and how to keep data private.
 
@@ -25,3 +28,11 @@ Internships at **ZetaQ** (LLM pipelines), **Thinking Engines** (player-performan
 **Web:** React, Next.js, Node.js, Express, FastAPI, Three.js
 **AI/ML:** PyTorch, Hugging Face, LoRA/QLoRA fine-tuning, RAG, Ollama, llama.cpp, Gemini API
 **Data:** PostgreSQL (Supabase), MongoDB, MySQL
+
+## Contributions
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="profile-3d-contrib/profile-night-rainbow.svg">
+  <source media="(prefers-color-scheme: light)" srcset="profile-3d-contrib/profile-green-animate.svg">
+  <img src="profile-3d-contrib/profile-green-animate.svg" alt="3D contribution graph">
+</picture>
