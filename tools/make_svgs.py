@@ -3,6 +3,7 @@
 Self-contained SVG + SMIL, no fonts or external services, so GitHub renders them as-is.
 Run: python tools/make_svgs.py
 """
+import html
 import math
 import os
 import random
@@ -83,7 +84,7 @@ def typing():
     W, H, FS, CW = 900, 54, 24, 14.4  # CW = forced width per character
     SLOT, TYPE, ERASE = 5.0, 0.055, 0.025  # seconds per line, per typed char, per erased char
     T = SLOT * len(lines)
-    out = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{" | ".join(lines)}">']
+    out = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{html.escape(" | ".join(lines))}">']
     for i, s in enumerate(lines):
         n = len(s); w = n * CW; x0 = (W - w) / 2; start = i * SLOT
         t_typed = start + n * TYPE; t_erase = start + SLOT - 0.2 - n * ERASE
@@ -98,7 +99,7 @@ def typing():
         out.append(f'<clipPath id="c{i}"><rect x="{x0:.1f}" y="0" height="{H}" width="0"><animate attributeName="width" values="{wv}" keyTimes="{kt}" calcMode="discrete" dur="{T}s" repeatCount="indefinite"/></rect></clipPath>')
         out.append(f'<g opacity="0"><animate attributeName="opacity" {vis} calcMode="discrete" dur="{T}s" repeatCount="indefinite"/>'
                    f'<text x="{x0:.1f}" y="{H/2 + FS*0.36:.1f}" textLength="{w:.1f}" lengthAdjust="spacingAndGlyphs" clip-path="url(#c{i})" '
-                   f'font-family="Consolas, \'SFMono-Regular\', Menlo, \'DejaVu Sans Mono\', monospace" font-size="{FS}" font-weight="600" fill="#2f81f7">{s.replace("&", "&amp;")}</text>'
+                   f'font-family="Consolas, \'SFMono-Regular\', Menlo, \'DejaVu Sans Mono\', monospace" font-size="{FS}" font-weight="600" fill="#2f81f7">{html.escape(s, quote=False)}</text>'
                    f'<rect y="{H/2 - FS*0.55:.1f}" width="2.5" height="{FS*1.1:.1f}" fill="#2f81f7" x="{x0:.1f}">'
                    f'<animate attributeName="x" values="{cx}" keyTimes="{kt}" calcMode="discrete" dur="{T}s" repeatCount="indefinite"/>'
                    f'<animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/></rect></g>')
