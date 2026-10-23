@@ -73,9 +73,13 @@ def banner():
 
 def typing():
     lines = ["Full-stack + AI/ML engineer",
-             "Researching how LLMs fail silently in production",
-             "Building fair and privacy-preserving ML",
-             "IT @ FCRIT · Thane, India"]
+             "Teaching rocks to think. Results may vary.",
+             "It works on my machine. Shipping the machine.",
+             "My LLM was 99% confident. It was also wrong.",
+             "There's no place like 127.0.0.1",
+             "git commit -m \"fixed it (for real this time)\"",
+             "Sleep is just garbage collection for the brain.",
+             "Coffee in, commits out."]
     W, H, FS, CW = 900, 54, 24, 14.4  # CW = forced width per character
     SLOT, TYPE, ERASE = 5.0, 0.055, 0.025  # seconds per line, per typed char, per erased char
     T = SLOT * len(lines)

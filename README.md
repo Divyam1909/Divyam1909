@@ -1,5 +1,5 @@
 <p align="center"><img src="assets/banner.svg" alt="Divyam Navin" width="100%"></p>
-<p align="center"><img src="assets/typing.svg" alt="Full-stack + AI/ML engineer | Researching how LLMs fail silently in production | Building fair and privacy-preserving ML | IT @ FCRIT, Thane, India"></p>
+<p align="center"><img src="assets/typing.svg" alt="Full-stack + AI/ML engineer, plus a few random thoughts"></p>
 
 ### Hi, I'm Divyam 👋
 
